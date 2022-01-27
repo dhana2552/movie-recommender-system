@@ -10,7 +10,7 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 
 def fetch_poster(movie_id):
-    url = 'https://api.themoviedb.org/3/movie/{}?api_key=4e1c124d3272830345e8d1c4b674a96c'.format(movie_id)
+    url = 'https://api.themoviedb.org/3/movie/{}?api_key=<removed>'.format(movie_id)
     data = requests.get(url)
     data = data.json()
     return 'https://image.tmdb.org/t/p/w92/'+data['poster_path']
